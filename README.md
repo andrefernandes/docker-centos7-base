@@ -37,18 +37,18 @@ but I have not been able to play with RHEL 7 yet (blame my SysAdmins).
 
 * **build.sh** : builds the image locally (docker build)
 * **runbash.sh** : convenient way to run commands on a new
-  container (fast-food, auto-destroy) or even to just
-  open a bash shell to play.
+container (fast-food, auto-destroy) or even to just
+open a bash shell to play.
 
 #### Some nice tests:
 
 Show CentOS version:
 
-  ./runbash.sh cat /etc/redhat=release
-  CentOS Linux release 7.0.1406 (Core)
+    ./runbash.sh cat /etc/redhat=release
+    CentOS Linux release 7.0.1406 (Core)
 
 Show files (ls):
 
-  ./runbash.sh ls -l /opt/
-  total 0 
+    ./runbash.sh ls -l /opt/
+    total 0 
 
