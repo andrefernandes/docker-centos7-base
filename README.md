@@ -12,6 +12,7 @@ a few extra packages:
 * wget
 * unzip
 * EPEL repo
+* pwgen (from EPEL)
 
 ### What is it for?
 
