@@ -33,3 +33,10 @@ As far as I know, RHEL 7 containers are covered by its RHEL 7 hosts'
 license. Yum updating should work the same way it works on the host,
 but I have not been able to play with RHEL 7 yet (blame my SysAdmins).
 
+### Useful scripts
+
+* **build.sh** : builds the image locally (docker build)
+* **runbash.sh** : convenient way to run commands on a new
+  container (fast-food, auto-destroy)
+
+

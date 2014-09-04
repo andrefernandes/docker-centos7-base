@@ -23,3 +23,5 @@ RUN yum update -y && yum install net-tools tar wget unzip -y && yum clean all &&
     rm epel-release-7-1.noarch.rpm && \
     yum update -y && yum clean all
 
+RUN yum -y install pwgen && yum clean all
+
