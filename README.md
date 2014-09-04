@@ -20,6 +20,12 @@ Most images we find at the public Docker Hub are Ubuntu-based.
 Nothing against Ubuntu, but Redhat customers fell more at home
 with CentOS.
 
+A work is in progress to convert, migrate and adapt some useful
+images around to this CentOS-based distribution. The list below
+will be updated accordingly.
+
+* TO_DO
+
 ### But I need RHEL images!
 
 Please note that nearly all images under my repository are derived from this one,
