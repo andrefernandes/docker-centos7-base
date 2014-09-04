@@ -28,6 +28,7 @@ will be updated accordingly.
 * andrefernandes/docker-tomcat7
 * andrefernandes/docker-mysql
 * andrefernandes/docker-redis
+* andrefernandes/docker-node
 
 ### But I need RHEL images!
 
