@@ -52,3 +52,29 @@ Show files (ls):
     ./runbash.sh ls -l /opt/
     total 0 
 
+### Using a local mirror (OPTIONAL)
+
+If you plan to build a lot of images locally it may be a good idea
+to setup a local mirror of a CentOS yum repository (by "local" I mean
+somewhere in your LAN).
+This is not a complicated task, but it takes some disk space and bandwitch (at least
+on the first rsync).
+
+Take your time, have some patience until you get the proper rsync
+command that works with the mirror you are rsyncing from (make sure you
+are syncing only x86_64 packages, for example). After syncing you'll
+also want to serve these folders with a plain Apache - the URLs that
+point to your local mirror are the ones you will put into the custom
+repo file included in this project.
+
+There is a line to uncomment at the Dockerfile that replaces the
+standard repo file for the custom one that should be edited in order
+to point to your local mirror.
+
+So, in short: (1) pick an Apache server somewhere in your LAN,
+(2) sync from another CentOS mirror (rsync or any equivalent
+tool), (3) set a virtual path in your Apache in order to serve
+these files, (4) edit the repo file properly, (5) uncomment
+the proper lines in Dockerfile, (6) rebuild image.
+
+
