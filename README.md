@@ -21,16 +21,20 @@ Nothing against Ubuntu, but Redhat customers fell more at home
 with CentOS.
 
 A work is in progress to convert, migrate and adapt some useful
-images around to this CentOS-based distribution. The list below
+images around to CentOS-based distributions. The list below
 will be updated accordingly.
 
-* TO_DO
+* andrefernandes/docker-java7
+* andrefernandes/docker-tomcat7
+* andrefernandes/docker-mysql
+* andrefernandes/docker-redis
 
 ### But I need RHEL images!
 
 Please note that nearly all images under my repository are derived from this one,
-so it would be very easy to simply change the FROM clause in its
-Dockerfile in order to use the RHEL 7 official base image.
+so it would be very easy to simply change the FROM clause in its own
+Dockerfile in order to use the RHEL 7 official base image. Rebuilding
+the derived images would be a piece of cake.
 
 The RHEL 7 official base image can be downloaded from Redhat and
 installed with "docker load" and tagged with whatever name you like.
@@ -63,7 +67,7 @@ Show files (ls):
 If you plan to build a lot of images locally it may be a good idea
 to setup a local mirror of a CentOS yum repository (by "local" I mean
 somewhere in your LAN).
-This is not a complicated task, but it takes some disk space and bandwitch (at least
+This is not a complicated task, but it takes some disk space and bandwidth (at least
 on the first rsync).
 
 Take your time, have some patience until you get the proper rsync
