@@ -1,7 +1,7 @@
 # Base CentOS 7 with a few perks
-# Includes epel repo
+# Includes epel repo for local build
 
-FROM centos:centos7
+FROM centos:latest
 
 MAINTAINER Andre Fernandes
 
